@@ -18,11 +18,11 @@ import { join } from 'path';
       password: process.env.POSTGRES_PASSWORD || process.env.DB_PASSWORD,
       host: process.env.POSTGRES_HOST || 'localhost',
       port: 5432,
-     // database: 'urls_api',
-     database: 'ddojqlh9g1t5kv'
+      //database: 'urls_api',
+      database: 'ddojqlh9g1t5kv'
     }),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..','..','build'),
+      rootPath: join(__dirname, '..','build'),
     }),
     AuthModule,
     UsersModule
