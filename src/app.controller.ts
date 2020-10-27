@@ -17,7 +17,7 @@ export class AppController {
     return  this.appService.addLink(content, mimeType);
   }
 
-  //GET content (text/json/js/xml....) that is in url_id link
+  //GET content (the content can be text/json/js/xml....) that is in url_id link
   //set the content-type header according the content language
   @Get('/link/:url_id')
   async getContent(@Param('url_id') url_id: string,
